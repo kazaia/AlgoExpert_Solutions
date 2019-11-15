@@ -1,5 +1,11 @@
 # Palindrome check
 
+# Solution 1:
+def isPalindrome(string):
+	return string == string[::-1]
+
+
+# Solution 2;
 def isPalindrome(string):
     reversed = []
     lst = [x for x in string]
