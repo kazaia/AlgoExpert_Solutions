@@ -1,4 +1,0 @@
-# Nth fibonacci
-
-
-
