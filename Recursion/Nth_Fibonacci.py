@@ -1,5 +1,10 @@
 # Nth fibonacci
-# Time complexity without memoization converge to 2^n, because for each given n we call 2 function fib(n-1) and fib(n-2) and each function calls 2 fuctions and so on and so forth
+# Time complexity without memoization converge to 2^n:
+# For each given n we call 2 function fib(n-1) and fib(n-2) and each function calls 2 fuctions and so on and so forth
+
+# Space complexity: O(n) beacause of the function callstack 
+
+# Time complexity with memoization:
 
 cache = {}
 def fib(self, n):
