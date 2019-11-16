@@ -22,3 +22,13 @@ def isPalindrome(string):
     for i in reversed(range(len(string))):
         reversedString += string[i]
     return string == reversedString
+
+
+# Solution 4:
+# Time complexity: O(n) Instead of creating new strings each time, we use a list wich is ,unlike strings, mutable.
+# Space complexity: O(n) as we creted a list of lenght n. 
+def isPalindrome(string):
+    reversedString = []
+    for i in reversed(range(len(string))):
+        reversedString.append(string[i])
+    return string == "".join(reversedString)
