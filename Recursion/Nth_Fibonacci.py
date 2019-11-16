@@ -5,13 +5,17 @@
 # Space complexity: O(n) beacause of the function callstack 
 
 # Time complexity with memoization:
+# Because we are calculating every fib(n) just once
+# Space complexity: O(n) because of the recursive call stack and also because of the created dictionary with the lenght of n elements. 
 
-cache = {}
-def fib(self, n):
-    if n in cache:
-        return cache[n]
-    else:
-	if n == 0 : return 0
-	if n == 1 or n == 2: return 1
-	cache[n] = fib(n - 2) + fib(n - 1) 
-	return 	cache[n] 
+cache = {0:0, 1:1, 2:1}
+class Solution:
+    def fib(self, n):
+        if n in cache:
+            return cache[n]
+        else:
+            cache[n] = self.fib(n - 2) + self.fib(n - 1) 
+            return 	cache[n] 
+
+# Can we do better ? Could you do it iteratively ?
+
