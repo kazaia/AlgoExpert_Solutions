@@ -17,6 +17,14 @@ def twoNumberSum(array, targetSum):
 # Time complexity: O(n)
 # Space complexity: O(n)
 
+def twoNumberSum(array, targetSum):
+	nums = {}
+	for num in array:
+	   if targetSum - num in nums:
+	       return [targetSum - num, num]
+	   else:
+	       nums[num] = True
+	return []		
 
 
 # Solution3: with two pointers 
@@ -35,4 +43,6 @@ def twoNumberSum(array, targetSum):
 		elif array[i] + array[j] == targetSum:
 			return [array[i], array[j]]
 		else:
-			return [ ]
+	return [ ]
+
+
