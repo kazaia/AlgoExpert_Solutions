@@ -1,15 +1,22 @@
 # Two number sum 
 
 # Solution1: Brute force 
+# Time complexity: O(n^2)
+# Space complexity: O(n)
+
+
 
 
 
 # Solution2: with hash table
+# Time complexity: O(n)
+# Space complexity: O(n)
 
 
 
 # Solution3: with two pointers 
-
+# Time complexity: O(nlog(n))
+# Space complexity: O(1)
 
 def twoNumberSum(array, targetSum):
 	array.sort()
