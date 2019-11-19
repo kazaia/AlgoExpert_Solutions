@@ -4,7 +4,14 @@
 # Time complexity: O(n^2)
 # Space complexity: O(n)
 
-
+def twoNumberSum(array, targetSum):
+	for i in range(len(array)):
+		for j in range(i, len(array)):
+			if array[i] + array[j] == targetSum and i < j:
+				return [array[i], array[j]]
+			elif array[i] + array[j] == targetSum and i > j:
+				return [array[j], array[i]]
+	return []		
 
 
 
