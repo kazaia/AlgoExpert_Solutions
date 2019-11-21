@@ -1,7 +1,7 @@
 # Find three largest numbers
 
 # O(n) time 
-# O(n) space
+# O(1) space
 
 def findThreeLargestNumbers(array):
     output = []
