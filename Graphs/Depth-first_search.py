@@ -1,5 +1,13 @@
 # Depth first search 
 
+
+# Time complexity: O(V+E) while V is numbers of Vertices and E is number of edges
+# Space complexity: O(V)
+
+
+
+
+
 # Do not edit the class below except
 # for the depthFirstSearch method.
 # Feel free to add new properties
