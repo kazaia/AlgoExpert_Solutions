@@ -1,4 +1,6 @@
-# Breath first check 
+# Time complexity: 
+# Space complexity: 
+
 
 # Do not edit the class below except
 # for the breadthFirstSearch method.
@@ -15,4 +17,4 @@ class Node:
 
     def breadthFirstSearch(self, array):
         # Write your code here.
-        pass
+        
