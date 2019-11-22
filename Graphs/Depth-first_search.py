@@ -1,11 +1,5 @@
-# Depth first search 
-
-
 # Time complexity: O(V+E) while V is numbers of Vertices and E is number of edges
 # Space complexity: O(V)
-
-
-
 
 
 # Do not edit the class below except
@@ -22,5 +16,7 @@ class Node:
         return self
 
     def depthFirstSearch(self, array):
-        # Write your code here.
-        pass
+		array.append(self.name)
+		for child in self.children:
+			child.depthFirstSearch(array)
+		return array	
