@@ -1,5 +1,5 @@
-# Time complexity: 
-# Space complexity: 
+# Time complexity: O(V+E) where V is the number of Vertices and E is the number of Edges
+# Space complexity: O(V)
 
 
 # Do not edit the class below except
