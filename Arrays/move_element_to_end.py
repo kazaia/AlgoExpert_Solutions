@@ -24,7 +24,7 @@ def moveElementToEnd(array, toMove):
     while i < j:
         if array[i] != toMove:
             i += 1
-        if array[j] == toMove:
+        if i < j and array[j] == toMove:
             j -= 1
         if array[i] == toMove and array[j] != toMove:
             array[i], array[j] = array[j], array[i]
