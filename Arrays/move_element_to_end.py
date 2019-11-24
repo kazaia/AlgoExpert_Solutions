@@ -13,4 +13,22 @@ def moveElementToEnd(array, toMove):
 
 a = [2, 1, 2, 2, 2, 3, 4, 2]
 print(moveElementToEnd(a, 2))
-moveElementToEnd´
+
+
+#Solution2: Swaping elements (Order of elements is not important)
+# O(n) Time / O(1) Space
+def moveElementToEnd(array, toMove):
+    i = 0
+    j = len(array) -1
+
+    while i < j:
+        if array[i] != toMove:
+            i += 1
+        if array[j] == toMove:
+            j -= 1
+        if array[i] == toMove and array[j] != toMove:
+            array[i], array[j] = array[j], array[i]
+    return array   
+
+
+
