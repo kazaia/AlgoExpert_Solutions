@@ -1,4 +1,6 @@
 # Shifted binary search
+#Time complexity: O(log(n))
+#Space complexity: O(log(n)) (Due to recursion)
 
 def shiftedBinarySearch(array, target):
     return shiftedBinarySearchHelper(array, target, 0, len(array) -1)
