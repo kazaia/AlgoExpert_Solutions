@@ -20,7 +20,7 @@ def shiftedBinarySearchHelper(array, target, left, right):
         else:
             return shiftedBinarySearchHelper(array, target, middle+1, right)
     else:
-        if  target < array[left] and target >= potentialMatch:
+        if  target < array[right] and target >= potentialMatch:
             return shiftedBinarySearchHelper(array, target, middle +1 , right)
         else:
             return shiftedBinarySearchHelper(array, target, left , middle -1)
