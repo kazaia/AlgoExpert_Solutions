@@ -1,4 +1,6 @@
 # Balanced brackets 
+# Time complexity: O(n)
+# Space complexity: O(n)
 
 def is_match(a, b):
 	if a == "(" and b == ")" or a == "{" and b == "}" or a == "[" and b == "]":
