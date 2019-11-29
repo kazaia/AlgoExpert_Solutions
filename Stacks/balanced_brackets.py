@@ -21,3 +21,25 @@ def balancedBrackets(string):
 			return False
 	return len(stack) == 0
 
+
+
+# Solution 2:
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+def balancedBrackets(string):
+    openingBrackets = "{(["
+    closingBrackets =  "}])"
+    matchingBrackets = {"}":"{", ")":"(", "]":"["}
+    stack = []
+    for char in string:
+        if char in openingBrackets:
+            stack.append(char)
+        elif char in closingBrackets:
+            if len(stack) == ):
+                return False
+            if stack[-1] == matchingBrackets[char]:
+                stack.pop()
+            else:
+                return False
+    return len(stack) == 0       
