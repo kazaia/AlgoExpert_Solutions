@@ -20,12 +20,9 @@ def branchSums(root):
 def computeBranchSums(root, runningSum, sums):
     if not root:
         return []
-		
-	newRunningSum = runningSum + root.value
-
+    newRunningSum = runningSum + root.value
     if not root.left and not root.right:
         sums.append(newRunningSum)
         return
-
     computeBranchSums(root.left, newRunningSum, sums)
     computeBranchSums(root.right, newRunningSum, sums)
