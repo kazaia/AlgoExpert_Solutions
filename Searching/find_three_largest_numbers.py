@@ -19,3 +19,14 @@ def findThreeLargestNumbers(array):
 
 a = [141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7]
 print(findThreeLargestNumbers(a))
+
+
+# Solution 2:
+def findThreeLargestNumbers(array):
+	output = []
+	array.sort()
+	for item in range(3):
+		output.append(array[-1])
+		array.remove(array[-1])
+	output.sort()
+	return output	
