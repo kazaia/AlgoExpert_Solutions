@@ -33,12 +33,16 @@ def isPalindrome(string):
         reversedString.append(string[i])
     return string == "".join(reversedString)
 
-# Solution 5: Recursive approach 
-
-
-
-
-
 
 
 # Solution6: two pointers approach
+def isPalindrome(string):
+	left = 0 
+	right = len(string) -1
+    while left < right:
+		if string[left] == string[right]:
+			left += 1
+			right -= 1
+		else:
+			return False
+	return True		
