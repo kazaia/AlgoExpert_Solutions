@@ -17,5 +17,4 @@ class Solution:
             cache[n] = self.fib(n - 2) + self.fib(n - 1) 
             return 	cache[n] 
 
-# Can we do better ? Could you do it iteratively ?
 
