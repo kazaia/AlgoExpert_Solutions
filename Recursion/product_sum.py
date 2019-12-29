@@ -3,10 +3,10 @@
 # Space complexity: O(n). due to recursion  
 
 def productSum(array, depth = 1):
-	outputSum = 0 
-	for item in array:
-		if type(item) is list:
-			outputSum += productSum(item, depth + 1)
-		else:
-			outputSum += item 
-	return outputSum * depth
+    outputSum = 0
+    for element in array:
+        if type(element) is list:
+            outputSum += productSum(element, depth + 1)
+        else:
+	    outputSum += element
+    return outputSum * depth
