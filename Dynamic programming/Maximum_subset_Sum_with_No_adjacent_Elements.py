@@ -12,3 +12,9 @@ def maxSubsetSumNoAdjacent(array):
 	for i in range(2, len(array)):
 		maxSums[i] = max( maxSums[i-2] + array[i], maxSums[i-1])
 	return maxSums[-1]	
+
+
+
+
+
+
