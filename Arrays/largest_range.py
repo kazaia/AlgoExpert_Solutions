@@ -1,6 +1,7 @@
 # Largest range
 
-
+# Time complexity: O(nlog(n))
+# Space complexity: O(1)
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         if not nums:
