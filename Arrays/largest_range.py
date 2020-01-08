@@ -21,3 +21,32 @@ class Solution:
         return max(longest_count, current_count)
             
   
+# Time complexity:O(n)
+# Space complexity: O(n)
+def largestRange(array):
+    bestRange  = []
+    longestLength = 0
+    dict = {}
+    for num in array:
+        dict[num] = True
+    for num in array:
+        if not dict[num]:
+            continue
+        dict[num] = False
+        currentLength =1
+        left = num - 1
+        right = num + 1
+        while left in dict:
+            dict[left] = False
+            currentLength += 1
+            left -= 1
+        while right in dict:
+            dict[right] = False
+            currentLength += 1
+            right += 1
+            
+        if currentLength > longestLength:
+            longestLength = currentLength
+            bestRange = [left +1, right -1]
+            
+        return bestRange
