@@ -30,3 +30,12 @@ def findThreeLargestNumbers(array):
 		array.remove(array[-1])
 	output.sort()
 	return output	
+
+
+# Solution 3: With the use of a heap 
+
+import heapq
+def findThreeLargestNumbers(array):
+	output = heapq.nlargest(3, array)
+	output.sort()
+	return output
