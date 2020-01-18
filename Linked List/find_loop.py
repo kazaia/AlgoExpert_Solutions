@@ -1,5 +1,5 @@
 # Find loop 
-
+# O(n) time / O(1) space 
 
 # This is an input class. Do not edit.
 class LinkedList:
@@ -24,3 +24,5 @@ def findLoop(head):
 
 
 
+
+	
