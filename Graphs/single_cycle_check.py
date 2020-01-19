@@ -15,3 +15,6 @@ def hasSingleCycle(array):
 def getNextIdx(i, array):
     nextIdx = (i + array[i]) % len(array)
     return nextIdx if nextIdx >= 0  else nextIdx + len(array)
+
+
+
